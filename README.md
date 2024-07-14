@@ -8,13 +8,35 @@ Ensure you have Node.js and npm installed on your machine.
 ### Video Tutorial
 You can also follow along with this [video tutorial](https://www.youtube.com/watch?v=xTCBaGeYTck&list=PLnDvRpP8Bnex2GQEN0768_AxZg_RaIGmw&index=22).
 
+## Gernarate key:
+1. **Run to generate the key**
+ ```bash
+node ace generate:key
+```
 
-### Steps
+2. **Create .env**
+```bash
+PORT=3333
+HOST=0.0.0.0
+NODE_ENV=development
+APP_KEY=3HAdSv4l-fRBMiRusUdAo7duVazEshUT => change here => xFrf9LtPHkvzAqACzSDiv088jOZeqsqJ
+DRIVE_DISK=local
+DB_CONNECTION=sqlite
+```
 
-1. **Install Dependencies:**
+3. **Copy the key generated**
+```bash
+xFrf9LtPHkvzAqACzSDiv088jOZeqsqJ
+  > During development, you may want to set the above secret as "APP_KEY" inside the .env file
+```
+
+### Instalations Steps
+
+1. **Install Dependencies and run the server:**
    ```bash
    npm install && npm install sqlite3 --save && node ace migration:run && node ace serve
 ``
+
 
 ### Checking API Functionality with Postman
 
